@@ -7,9 +7,10 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.testcontainers.containers.localstack.LocalStackContainer;
 
-
+@Profile(value = "test")
 @Configuration
 public class S3Config {
     public static final String BUCKET_NAME = "test-bucket";

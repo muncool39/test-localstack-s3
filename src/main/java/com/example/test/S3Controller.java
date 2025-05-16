@@ -2,7 +2,9 @@ package com.example.test;
 
 
 
-import static com.example.test.config.S3Config.BUCKET_NAME;
+
+
+import static com.example.test.config.S3LocalConfig.BUCKET_NAME;
 
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;
